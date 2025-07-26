@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f5;
+  color: #333;
+  padding: 20px;
+}
+
+.invoice-container {
+  background-color: white;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  gap: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  background: #333;
+  margin-bottom: 10px;
+}
+
+.invoice-title {
+  flex: 1;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.invoice-details p {
+  margin: 5px 0;
+}
+
+.invoice-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.notes, .invoice-to {
+  flex: 1;
+}
+
+.invoice-table {
+  display: grid;
+  gap: 10px;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 0.7fr 1fr;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.summary {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.summary-box {
+  width: 300px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.summary-box p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.summary-box .total {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.terms, .payment-method {
+  padding: 10px 0;
+}
+
+.payment-method form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-method label {
+  display: inline-block;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  gap: 10px;
+}
+
+.card-info input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.signature {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.signature button {
+  padding: 10px 20px;
+  background-color: #2e2e2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signature button:hover {
+  background-color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .invoice-header,
+  .invoice-info {
+    flex-direction: column;
+  }
+
+  .card-info {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-box {
+    width: 100%;
+  }
+}
