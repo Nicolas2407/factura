@@ -1,115 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Invoice</title>
-  <link rel="stylesheet" href="factura Nicolas.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="./factura Nicolas.css" />
 </head>
+
 <body>
-  <div class="invoice-container">
-    <div class="invoice-header">
-      <div class="company-info">
-        <img src="Nueva carpeta/factura/cubo.jpg" alt="">
-        <div class="logo">
-        <h1>Company Name</h1>
-        <p>Branding tagline space here</p></div>
-      </div>
-      <div class="invoice-title">
-        <h2>INVOICE</h2>
-        <div class="invoice-details">
-          <p><strong>INVOICE DATE:</strong> 01/01/2018</p>
-          <p><strong>DUE DATE:</strong> 01/16/2018</p>
-          <p><strong>INVOICE #:</strong> 345678</p>
+    <div class="invoice-container">
+        <div class=" element elemento-1">
+            <img src="CUBO 2.png" alt="logo" class="cubo">
+            <h2>company name</h2>
+            <P>BRANDING TAGLINE SPACE HERE</P>
         </div>
-      </div>
-    </div>
-
-    <div class="invoice-info">
-      <div class="notes">
-        <h3>Additional notes</h3>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-      <div class="invoice-to">
-        <h3>Invoice to:</h3>
-        <p>John Smith<br>123 Green Lake St.<br>City/State<br>Country</p>
-      </div>
-    </div>
-
-    <div class="invoice-table">
-      <div class="table-header">
-        <div>#</div>
-        <div>Product Description</div>
-        <div>Price</div>
-        <div>Qty</div>
-        <div>Total</div>
-      </div>
-      <div class="table-row">
-        <div>1</div>
-        <div>Item 1</div>
-        <div>$30.50</div>
-        <div>3</div>
-        <div>$91.50</div>
-      </div>
-      <div class="table-row">
-        <div>2</div>
-        <div>Item 2</div>
-        <div>$50.00</div>
-        <div>1</div>
-        <div>$50.00</div>
-      </div>
-      <div class="table-row">
-        <div>3</div>
-        <div>Item 3</div>
-        <div>$70.00</div>
-        <div>5</div>
-        <div>$350.00</div>
-      </div>
-      <div class="table-row">
-        <div>4</div>
-        <div>Item 4</div>
-        <div>$20.00</div>
-        <div>2</div>
-        <div>$40.00</div>
-      </div>
-    </div>
-
-    <div class="summary">
-      <div class="summary-box">
-        <p>Subtotal: <span>$531.50</span></p>
-        <p>Taxes: <span>$18.00</span></p>
-        <p>Shipping: <span>$12.00</span></p>
-        <p>Discount: <span>$15.00</span></p>
-        <hr>
-        <p class="total">TOTAL: <span>$592.28</span></p>
-      </div>
-    </div>
-
-    <div class="terms">
-      <h3>Terms and Conditions</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
-    </div>
-
-    <div class="payment-method">
-      <h3>Payment Method</h3>
-      <form>
-        <label><input type="radio" name="payment"> Cash/Debit</label>
-        <label><input type="radio" name="payment"> Cheque</label>
-        <label><input type="radio" name="payment"> Credit Card</label>
-        <div class="card-info">
-          <input type="text" placeholder="Cardholder's Name" />
-          <input type="text" placeholder="Card #" />
-          <input type="text" placeholder="Exp" />
-          <input type="text" placeholder="CV" />
+        <div class=" element elemento-2">
+            <h2>Invoice</h2>
         </div>
-      </form>
+        <div class=" element elemento-3">
+            <div class="texto-1">
+                <h1>Additional notes</h1>
+                <p>Ut enim ad manim veniam quis mostrud exertatin aliemco laboris nisi ut aliquip ex ea cmmo consequat
+                </p>
+            </div>
+            <div class="texto-2">
+                <h1>Invoice to:</h1>
+                <p>JOHN SMITH</p>
+                <P>123 GREEN LAKE ST</P>
+                <P>CITY STATE</P>
+                <P>COUNTRY</P>
+            </div>
+
+        </div>
+
+
+        <div class=" element elemento-4">
+            <h1>INVOICE DATE</h1>
+            <p>03.09.2018</p>
+            <h1>DUE DATE</h1>
+            <P>03.12.2018</P>
+            <h1></h1>INVOICE#</h1>
+            <P>12345</P>
+        </div>
+        <div class=" element elemento-5">
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>description</th>
+                        <th>price</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>item 1</td>
+                    <td>$30.50</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>item 2</td>
+                    <td>$30.50</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>item 3</td>
+                    <td>$30.50</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>item 4</td>
+                    <td>$30.50</td>
+                </tr>
+            </table>
+
+        </div>
+        <div class=" element elemento-6">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3</td>
+                    <td>$91.50</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>$350.00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>$40.00</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class=" element elemento-7">
+            <div class="terms">
+                <h3>Terms and conditions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut labore et magna aliqua.</p>
+                <div class="metodo-pago">
+                    <h3>Payment Method</h3>
+
+                    <div class="payment-options">
+                        <label><input type="radio" name="payment" value="cash"> Cash/Debit</label>
+                        <label><input type="radio" name="payment" value="cheque"> Cheque</label>
+                        <label><input type="radio" name="payment" value="credit"> Credit card</label>
+                    </div>
+
+                    <div class="payment-fields">
+                        <label>
+                            Cardholder's Name
+                            <input type="text" name="cardholder" placeholder="Full name">
+                        </label>
+
+                        <label>
+                            Card #
+                            <input type="text" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+                        </label>
+
+                        <label>
+                            Exp
+                            <input type="text" name="expiry" placeholder="MM/YY">
+                        </label>
+
+                        <label>
+                            CV
+                            <input type="text" name="cvv" placeholder="CVV">
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="total">
+                <p>Total parcial</p>
+                <p>impuestos</p>
+                <p>Envio</p>
+                <p>Descuento</p>
+                <p>Total</p>
+            </div>
+
+        </div>
+        <div class=" element elemento-8">
+            <div class="cuenta">
+                <p>$31.00</p>
+                <p>$63.38</p>
+                <p>$12.00</p>
+                <p>$15.00</p>
+                <p>$592.28</p>
+
+            </div>
+            <div class="firma">
+
+                _______________________<br>
+                Signature
+            </div>
+        </div>
     </div>
 
-    <div class="signature">
-      <button>Signature</button>
+
     </div>
-  </div>
+
 </body>
+
 </html>
