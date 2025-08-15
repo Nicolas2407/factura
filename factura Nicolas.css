@@ -1,164 +1,379 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f2f4f5;
-  color: #333;
-  padding: 20px;
+    font-family: Arial;
+    background-color: rgb(133, 144, 137);
 }
 
 .invoice-container {
-  background-color: white;
-  max-width: 900px;
-  margin: auto;
-  padding: 30px;
-  display: grid;
-  gap: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
+    margin: 90px auto;
+    width: 90%;
+    height: 700px;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(6, fr);
+    grid-template-rows: 15% 20% 25% 40%;
 }
 
-.invoice-header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.element {
+    color: #ffff;
+    text-align: center;
 }
 
-.company-info {
-  flex: 1;
+.elemento-1 {
+    background-color: rgb(225, 221, 221);
+    grid-column: 1/5;
+    grid-row: 1;
+    font-size: 12px;
+    color: black;
+    text-align: right;
+    text-align: center;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
-  background: #333;
-  margin-bottom: 10px;
+.p {
+    font-size: 10px;
 }
 
-.invoice-title {
-  flex: 1;
-  background-color: #2e2e2e;
+.cubo {
+    margin-top: 0px;
+    width: 100px;
+    margin-bottom: 10px;
+    float: left;
+    float: inline-start;
+
+}
+
+.elemento-2 {
+    background-color: rgb(41, 46, 41);
+    grid-column: 5/7;
+    align-items: center;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.elemento-2 h2 {
+    margin-top: 25px;
+}
+
+.elemento-3 {
+    background-color: rgb(246, 246, 246);
+    grid-column: 1/5;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    font-size: 10px;
+}
+
+.texto-1 {
+    width: 60%;
+    text-align: start;
+    padding: 20px 0px 30px 30px;
+}
+
+.texto-2 {
+    width: 40%;
+    text-align: end;
+    padding: 20px 20px 30px 0px;
+}
+
+
+.elemento-4 {
+    background-color: rgb(56, 59, 56);
+    grid-column: 5/7;
+    font-size: 5px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: auto;
+    text-align: center;
+}
+
+.elemento-4 h1 {
+    margin-top: 25px;
+}
+
+.elemento-5 {
+    background-color: rgb(225, 221, 221);
+    grid-column: 1/5;
+    display: grid;
+    font-size: 10px;
+}
+
+.tabla {
+    width: 100%;
+    height: 180px;
+    font-size: 10px;
+    padding: 10px 20px 10px 20px;
+    padding: 0%;
+    color: black;
+}
+
+.numero {
+    width: 60%;
+    text-align: center;
+    color: black;
+}
+
+.descripcion {
+    width: 60%;
+    text-align: center;
+    color: black;
+}
+
+.precio {
+    width: 60%;
+    text-align: center;
+    color: black;
+}
+
+
+.elemento-6 {
+    background-color: rgb(41, 46, 41);
+    grid-column: 5/7;
+    display: flex;
+    font-size: 10px;
+}
+
+.cantidad {
+    width: 60%;
+    text-align: center;
+    color: white;
+}
+
+.total {
+    width: 60%;
+    text-align: center;
+    color: white;
+}
+
+
+
+.elemento-7 {
+    background-color: white;
+    grid-column: 1/5;
+    display: flex;
+    font-size: 10px;
+}
+
+.terms {
+    color: black;
+    text-align: center;
+}
+
+.total {
+    color: black;
+    text-align: center;
+}
+
+.elemento-8 {
+    background-color: rgb(56, 59, 56);
+    grid-column: 5/7;
+    display: flex;
+    font-size: 10px;
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.tema {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cuenta {
+    color: white;
+text-align: center;
+}
+.firma {
   color: white;
-  padding: 20px;
-  border-radius: 8px;
+  text-align: center;
+  margin-top: 10px;
+  margin-top: auto;
+  padding-bottom: 8px;
 }
 
-.invoice-details p {
-  margin: 5px 0;
+.payment-method {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  max-width: 400px;
 }
 
-.invoice-info {
+.payment-options {
+  margin: 10px 0;
+}
+
+.payment-options label {
+  margin-right: 15px;
+}
+
+.payment-fields {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
-}
-
-.notes, .invoice-to {
-  flex: 1;
-}
-
-.invoice-table {
-  display: grid;
   gap: 10px;
 }
 
-.table-header, .table-row {
-  display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr 0.7fr 1fr;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-.table-header {
-  font-weight: bold;
-  background-color: #f0f0f0;
-}
-
-.summary {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.summary-box {
-  width: 300px;
-  background-color: #2e2e2e;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.summary-box p {
-  display: flex;
-  justify-content: space-between;
-  margin: 6px 0;
-}
-
-.summary-box .total {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.terms, .payment-method {
-  padding: 10px 0;
-}
-
-.payment-method form {
+.payment-fields label {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  flex: 1;
+  min-width: 100px;
 }
 
-.payment-method label {
-  display: inline-block;
-}
-
-.card-info {
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr;
-  gap: 10px;
-}
-
-.card-info input {
-  padding: 8px;
+.payment-fields input {
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
-.signature {
+.metodo-pago {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.signature button {
-  padding: 10px 20px;
-  background-color: #2e2e2e;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-.signature button:hover {
-  background-color: #444;
-}
+@media (max-width: 600px) {
+  .invoice-container {
+    
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+    width: 95%;
+    height: auto;
 
-/* Responsive */
-@media (max-width: 768px) {
-  .invoice-header,
-  .invoice-info {
+    
+  }
+
+  .elemento-1,
+  .elemento-2,
+  .elemento-3,
+  .elemento-4,
+  .elemento-5,
+  .elemento-6,
+  .elemento-7,
+  .elemento-8 {
+    grid-column: 1 / -1; 
+  }
+
+  .elemento-2,
+  .elemento-4,
+  .elemento-6,
+  .elemento-8 {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .elemento-3 {
     flex-direction: column;
+    font-size: 12px;
+    padding: 1rem;
   }
 
-  .card-info {
-    grid-template-columns: 1fr;
-  }
-
-  .summary-box {
+  .texto-1,
+  .texto-2 {
     width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
+  .tabla {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .cantidad,
+  .total {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .terms {
+    padding: 1rem;
+    font-size: 12px;
+  }
+
+  .tema {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .cubo {
+    width: 80px;
+    margin: 0 auto 10px auto;
+   
+  }
+
+  h1, h2, p {
+    font-size: 14px;
   }
 }
+
+@media (max-width: 600px) {
+  .invoice-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0; 
+  }
+
+  .elemento-5,
+  .elemento-6 {
+    grid-column: auto; 
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 400px) {
+  .elemento-1 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+  } 
+
+  .cubo {
+    margin-bottom: 10px; 
+  }
+}
+
+@media (max-width: 400px) {
+  .elemento-7 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-align: center;     
+  }
+
+  .terms, .total {
+    width: 100%;  
+    margin-bottom: 15px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .elemento-8 {
+    flex-direction: row;       
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .cuenta {
+    text-align: left;           
+  }
+
+  .firma {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+
+
+
+
